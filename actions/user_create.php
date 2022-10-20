@@ -13,7 +13,7 @@ if(isset($_POST['create'])){
 
   $sql = "INSERT INTO users (username, email, password, phone, address) VALUES ('$username', '$email', '$password', '$phone', '$address')";
   if(mysqli_query($link, $sql)){
-    header("Location: ../thankyou.php");
+    header("Location: ../thanyou.php");
   } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
   }
